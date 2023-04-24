@@ -1,0 +1,18 @@
+CREATE TABLE bookstore (id INTEGER PRIMARY KEY, name TEXT, author TEXT, aisle INTEGER, price INTEGER);
+INSERT INTO bookstore VALUES (1, "The Pattern Seekers", "Simon Baron-Cohen", 2, 15);
+INSERT INTO bookstore VALUES (2, "The Pacific Crest Trail", "Karen Berger & Daniel Smith", 2, 4);
+INSERT INTO bookstore VALUES (3, "How to Win Friends & Influence People", "Dale Carnegie", 3, 10);
+INSERT INTO bookstore VALUES (4, "Catching Fire", "Suzanne Collins", 3, 13);
+INSERT INTO bookstore VALUES (5, "pacific crest trials", "Zach Davis & Carly Moree", 4, 15);
+INSERT INTO bookstore VALUES (6, "Green", "Ted Dekker", 4, 11);
+INSERT INTO bookstore VALUES (7, "Talking to Strangers", "Malcolm Gladwell", 7, 11);
+INSERT INTO bookstore VALUES (8, "Pay It Forward", "Catherine Ryan Hyde", 8, 10);
+INSERT INTO bookstore VALUES (9, "The Call of the Wild", "Jack London", 12, 5);
+INSERT INTO bookstore VALUES (10, "The Road", "Cormac McCarthy", 13, 12);
+INSERT INTO bookstore VALUES (11, "I'm Glad My Mom Died", "Jennette McCurdy", 13, 18);
+INSERT INTO bookstore VALUES (12, "Gone", "Lisa McMann", 13, 9);
+INSERT INTO bookstore VALUES (13, "The Crucible", "Arthur Miller", 13, 11);
+INSERT INTO bookstore VALUES (14, "Prophet", "Frank Peretti", 16, 5);
+INSERT INTO bookstore VALUES (15, "Divergent", "Veronica Roth", 18, 11);
+SELECT * FROM bookstore;
+SELECT aisle, Avg(price) FROM bookstore GROUP BY aisle;
